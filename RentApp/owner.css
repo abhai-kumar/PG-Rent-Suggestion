@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(135deg, #1f4037, #99f2c8); Gradient background */
+    background-image: url('https://teja12.kuikr.com/is/p/f/800x600/guide/wp-content/uploads/2020/10/PG-for-rent-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #ff8c00;
+    margin: 20px 0 30px;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    background: #444;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 14px;
+    background: linear-gradient(90deg, #ff6b6b, #ff8c00);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff8c00, #ff6b6b);
+    transform: scale(1.05);
+}
+
+#mapid {
+    margin-top: 20px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 14px;
+    }
+
+    #mapid {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

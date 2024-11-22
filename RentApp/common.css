@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="number"], select, input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #mapid {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"], input[type="number"], select, input[type="submit"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #mapid {
+        height: 250px;
+    }
+}
